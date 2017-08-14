@@ -6,11 +6,9 @@ Adds a menu to the Finder that allows control over files stored iCloud, allowing
 
 ## Installation
 
-- [Download the latest version here](https://github.com/Obbut/iCloud-Control/releases/download/1.0.0/iCloud-Control.zip)
+- [Download the latest version here](https://github.com/Obbut/iCloud-Control/releases)
 - Place the app in your Applications folder
-- Launch it and follow the instructions on screen
-
-Builds provided on the releases page are Developer ID signed and should work with Gatekeeper enabled.
+- Launch it by right/control clicking and choosing "Open" (to prevent gatekeeper from preventing the app to open) and follow the instructions on screen
 
 ## Usage
 
