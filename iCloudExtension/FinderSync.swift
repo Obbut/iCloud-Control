@@ -11,7 +11,7 @@ import FinderSync
 
 class FinderSync: FIFinderSync {
 
-    let fm = FileManager.default()
+    let fm = FileManager.default
     
     // MARK: - Menu and toolbar item support
     
@@ -56,7 +56,7 @@ class FinderSync: FIFinderSync {
         for target in targets {
             NSLog("Publishing \(target) requested")
             do {
-                let url = try fm.urlForPublishingUbiquitousItem(at: target, expirationDate: nil)
+                let url = try fm.url(forPublishingUbiquitousItemAt: target, expiration: nil)
                 NSLog("Publishing \(target) succeeded, url: \(url)")
                 urls.append(url)
             } catch {
@@ -67,7 +67,7 @@ class FinderSync: FIFinderSync {
         let pb = NSPasteboard.general()
         pb.clearContents()
         
-        pb.writeObjects(urls)
+        pb.writeObjects(urls as [NSPasteboardWriting])
     }
     
     @IBAction func downloadItem(_ sender: AnyObject?) {
