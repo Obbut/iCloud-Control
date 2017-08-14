@@ -28,6 +28,7 @@ class FinderSync: FIFinderSync {
     }
     
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
+        NSLog("menu(for:)")
         let menu = NSMenu(title: "")
         menu.addItem(withTitle: "Remove selected item locally", action: #selector(removeLocal(_:)), keyEquivalent: "")
         menu.addItem(withTitle: "Download selected item", action: #selector(downloadItem(_:)), keyEquivalent: "")
@@ -36,9 +37,9 @@ class FinderSync: FIFinderSync {
     }
     
     @IBAction func removeLocal(_ sender: AnyObject?) {
-        let targets = FIFinderSyncController.default().selectedItemURLs()!
+        NSLog("removeLocal")
         
-        for target in targets {
+        for target in currentTargets {
             NSLog("Local removal of \(target) requested")
             do {
                 try fm.evictUbiquitousItem(at: target)
@@ -50,10 +51,9 @@ class FinderSync: FIFinderSync {
     }
     
     @IBAction func publish(_ sender: AnyObject?) {
-        let targets = FIFinderSyncController.default().selectedItemURLs()!
         var urls = [URL]()
         
-        for target in targets {
+        for target in currentTargets {
             NSLog("Publishing \(target) requested")
             do {
                 let url = try fm.url(forPublishingUbiquitousItemAt: target, expiration: nil)
@@ -71,9 +71,9 @@ class FinderSync: FIFinderSync {
     }
     
     @IBAction func downloadItem(_ sender: AnyObject?) {
-        let targets = FIFinderSyncController.default().selectedItemURLs()!
+        NSLog("Download requested")
         
-        for target in targets {
+        for target in currentTargets {
             NSLog("Download of \(target) requested")
             do {
                 try fm.startDownloadingUbiquitousItem(at: target)
@@ -82,6 +82,16 @@ class FinderSync: FIFinderSync {
                 NSLog("Download of \(target) failed with error \(error)")
             }
         }
+    }
+    
+    var currentTargets: [URL] {
+        var targets = FIFinderSyncController.default().selectedItemURLs() ?? []
+        
+        if let targetedUrl = FIFinderSyncController.default().targetedURL(), targets.count == 0 {
+            targets.append(targetedUrl)
+        }
+        
+        return targets
     }
 
 }
