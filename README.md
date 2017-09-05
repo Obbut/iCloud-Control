@@ -24,6 +24,10 @@ iCloud Control should work on macOS 10.2 Sierra, and on OS X 10.11 El Capitan.
 
 ## License
 
+iCloud Control is licensed under the MIT license. In addition to the restrictions placed by the MIT license, **you are not permitted and will not get permission to list iCloud Control or any derivative work on software catalogue websites like Mac Informer or MacUpdate.**
+
+
+
 The MIT License (MIT)
 
 Copyright (c) 2016 Robbert Brandsma
