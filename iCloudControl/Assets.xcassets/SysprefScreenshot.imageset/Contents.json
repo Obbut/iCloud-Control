@@ -2,12 +2,34 @@
   "images" : [
     {
       "idiom" : "mac",
-      "filename" : "SysprefScreenshot-1.png",
+      "filename" : "SysPrefsLight.png",
       "scale" : "1x"
     },
     {
       "idiom" : "mac",
-      "filename" : "SysprefScreenshot.png",
+      "filename" : "SysPrefsDark-1.png",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "mac",
+      "filename" : "SysPrefsLight@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "mac",
+      "filename" : "SysPrefsDark@2x.png",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
       "scale" : "2x"
     }
   ],

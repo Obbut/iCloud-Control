@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-dW-aai">
-                                <rect key="frame" x="397" y="854" width="123" height="29"/>
+                                <rect key="frame" x="395" y="854" width="127" height="29"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hello there!" id="0r4-5a-Be9">
                                     <font key="font" metaFont="system" size="24"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -142,6 +142,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SysprefScreenshot" width="390" height="309.5"/>
+        <image name="SysprefScreenshot" width="780" height="620"/>
     </resources>
 </document>
