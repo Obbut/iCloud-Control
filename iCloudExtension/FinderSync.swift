@@ -33,6 +33,7 @@ class FinderSync: FIFinderSync {
         menu.addItem(withTitle: "Remove selected item locally", action: #selector(removeLocal(_:)), keyEquivalent: "")
         menu.addItem(withTitle: "Download selected item", action: #selector(downloadItem(_:)), keyEquivalent: "")
         menu.addItem(withTitle: "Publish public link", action: #selector(publish(_:)), keyEquivalent: "")
+        menu.addItem(withTitle: "Exclude seletected item from iCloud", action: #selector(excludeItem(_:)), keyEquivalent: "")
         return menu
     }
     
@@ -80,6 +81,22 @@ class FinderSync: FIFinderSync {
                 NSLog("Download of \(target) succeeded")
             } catch {
                 NSLog("Download of \(target) failed with error \(error)")
+            }
+        }
+    }
+    
+    @IBAction func excludeItem(_ sender: AnyObject?) {
+        NSLog("Exclude requested")
+        
+        for target in currentTargets {
+            let name = target.lastPathComponent
+            let parentUrl = target.deletingLastPathComponent()
+            let noSyncUrl = URL(fileURLWithPath: ".\(name).nosync", isDirectory: false, relativeTo: parentUrl)
+            do {
+                try fm.moveItem(at: target, to: noSyncUrl)
+                try fm.createSymbolicLink(at: target, withDestinationURL: noSyncUrl)
+            } catch {
+                NSLog("Exclude of \(target) failed with error \(error)")
             }
         }
     }
