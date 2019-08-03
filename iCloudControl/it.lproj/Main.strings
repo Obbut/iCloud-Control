@@ -1,0 +1,39 @@
+
+/* Class = "NSTextFieldCell"; title = "Hello there!"; ObjectID = "0r4-5a-Be9"; */
+"0r4-5a-Be9.title" = "Hello there!";
+
+/* Class = "NSMenuItem"; title = "iCloud Control"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "iCloud Control";
+
+/* Class = "NSMenuItem"; title = "Quit iCloud Control"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit iCloud Control";
+
+/* Class = "NSTextFieldCell"; title = "To get started, enable the iCloud Control finder extension in System preferences. You can then close this app and get going!"; ObjectID = "5MP-A7-IYf"; */
+"5MP-A7-IYf.title" = "To get started, enable the iCloud Control finder extension in System preferences. You can then close this app and get going!";
+
+/* Class = "NSMenuItem"; title = "About iCloud Control"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About iCloud Control";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "iCloud Control"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "iCloud Control";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Hide iCloud Control"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide iCloud Control";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSViewController"; title = "iCloud Control"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "iCloud Control";
+
+/* Class = "NSButtonCell"; title = "Open System Preferences"; ObjectID = "fZL-4i-FEA"; */
+"fZL-4i-FEA.title" = "Open System Preferences";
+
+/* Class = "NSMenu"; title = "iCloud Control"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "iCloud Control";
