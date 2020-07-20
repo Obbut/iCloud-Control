@@ -23,7 +23,7 @@ Adds a menu to the Finder that allows control over files stored iCloud, allowing
 
 ## Usage
 
-The following options are provided trough a toolbar item in the Finder.
+The following options are provided through a toolbar item in the Finder.
 
 - **Remove selected item locally**: the selected item(s) will be removed from your device, while remaining in iCloud.
 - **Download selected item**: download previously removed files from iCloud. On macOS Sierra, the cloud icon provides the same functionality.
