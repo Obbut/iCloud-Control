@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C8BE94422F5D49A002B6283 /* Localizable_extension.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C8BE94622F5D49A002B6283 /* Localizable_extension.strings */; };
 		F21B54E61D2568A400C4B4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B54E51D2568A400C4B4D9 /* AppDelegate.swift */; };
 		F21B54E81D2568A400C4B4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B54E71D2568A400C4B4D9 /* ViewController.swift */; };
 		F21B54EA1D2568A400C4B4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21B54E91D2568A400C4B4D9 /* Assets.xcassets */; };
@@ -42,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C8BE94522F5D49A002B6283 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable_extension.strings; sourceTree = "<group>"; };
+		5C8BE94722F5D4A7002B6283 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
+		5C8BE94822F5D4A7002B6283 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable_extension.strings; sourceTree = "<group>"; };
 		F21B54E21D2568A400C4B4D9 /* iCloud Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCloud Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21B54E51D2568A400C4B4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21B54E71D2568A400C4B4D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F21B54FC1D2568E000C4B4D9 /* FinderSync.swift */,
+				5C8BE94622F5D49A002B6283 /* Localizable_extension.strings */,
 				F21B54FE1D2568E000C4B4D9 /* Info.plist */,
 				F21B54FA1D2568E000C4B4D9 /* Supporting Files */,
 				F2C9A9701D256AC200A6495D /* Extension.xcassets */,
@@ -197,8 +202,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				it,
 			);
 			mainGroup = F21B54D91D2568A300C4B4D9;
 			productRefGroup = F21B54E31D2568A400C4B4D9 /* Products */;
@@ -227,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C9A9711D256AC200A6495D /* Extension.xcassets in Resources */,
+				5C8BE94422F5D49A002B6283 /* Localizable_extension.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +269,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5C8BE94622F5D49A002B6283 /* Localizable_extension.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C8BE94522F5D49A002B6283 /* en */,
+				5C8BE94822F5D4A7002B6283 /* it */,
+			);
+			name = Localizable_extension.strings;
+			sourceTree = "<group>";
+		};
 		F21B54EB1D2568A400C4B4D9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F21B54EC1D2568A400C4B4D9 /* Base */,
+				5C8BE94722F5D4A7002B6283 /* it */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -30,10 +30,11 @@ class FinderSync: FIFinderSync {
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
         NSLog("menu(for:)")
         let menu = NSMenu(title: "")
-        menu.addItem(withTitle: "Remove selected item locally", action: #selector(removeLocal(_:)), keyEquivalent: "")
-        menu.addItem(withTitle: "Download selected item", action: #selector(downloadItem(_:)), keyEquivalent: "")
-        menu.addItem(withTitle: "Publish public link", action: #selector(publish(_:)), keyEquivalent: "")
-        menu.addItem(withTitle: "Exclude seletected item from iCloud", action: #selector(excludeItem(_:)), keyEquivalent: "")
+        
+        menu.addItem(withTitle: "removeLocal".localized(), action: #selector(removeLocal(_:)), keyEquivalent: "")
+        menu.addItem(withTitle: "downloadItem".localized(), action: #selector(downloadItem(_:)), keyEquivalent: "")
+        menu.addItem(withTitle: "publish".localized(), action: #selector(publish(_:)), keyEquivalent: "")
+        menu.addItem(withTitle: "excludeItem".localized(), action: #selector(excludeItem(_:)), keyEquivalent: "")
         return menu
     }
     
@@ -113,3 +114,9 @@ class FinderSync: FIFinderSync {
 
 }
 
+
+extension String {
+    func localized(bundle: Bundle = .main, tableName: String = "Localizable_extension") -> String {
+        return NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
+    }
+}
