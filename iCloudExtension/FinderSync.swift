@@ -65,7 +65,7 @@ class FinderSync: FIFinderSync {
             }
         }
         
-        let pb = NSPasteboard.general()
+        let pb = NSPasteboard.general
         pb.clearContents()
         
         pb.writeObjects(urls as [NSPasteboardWriting])
